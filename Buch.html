@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umrandete Abschnitte</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .upper-section {
+            border: 5px solid black;
+            height: 7%;
+			background-color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;			
+        }
+        .lower-section {
+            border: 5px solid DodgerBlue;
+            height: 93%;
+            position: relative;
+        }
+        .upper-section img, .lower-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .button {
+			font-size: 16pt;
+            width: 100px;
+            height: 40px;
+            border: 2px solid green;
+			margin-left: 4px;
+			margin-right: 6px;
+            background-color: lime;
+            cursor: pointer; /* Zeiger bei Hover */
+        }
+        .button:hover {
+            background-color: lightgreen; /* Hintergrundfarbe bei Hover */	
+        }	
+        .button2 {
+			font-size: 16pt;
+            width: 150px;
+            height: 40px;
+            border: 2px solid green;
+			margin-left: 4px;
+			margin-right: 6px;
+            background-color: lime;
+            cursor: pointer; /* Zeiger bei Hover */
+        }
+        .button2:hover {
+            background-color: lightgreen; /* Hintergrundfarbe bei Hover */	
+        }
+        .button3 {
+			font-size: 16pt;
+            width: 300px;
+            height: 40px;
+            border: 2px solid green;
+			margin-left: 4px;
+			margin-right: 6px;
+            background-color: lime;
+            cursor: pointer; /* Zeiger bei Hover */
+        }
+        .button3:hover {
+            background-color: lightgreen; /* Hintergrundfarbe bei Hover */	
+        }		
+
+    </style>
+	
+    <script>
+		function springe(URL)
+			{location.href=URL;}
+    </script>
+	
+</head>
+<body>
+
+    <div class="upper-section">
+        <button class="button" id="BTN_Home" onclick="springe('index.html')">Home</button>
+        <button class="button2" id="BTN_Buch" onclick="springe('Buch.html')">ZYL/Deutsch</button>
+		<button class="button2" id="BTN_Grammatik" onclick="springe('Grammatik.html')">Grammatik</button>
+		<button class="button3" id="BTN_DNLTranslator" onclick="springe('DNLTranslator.html')">Download Translator</button>
+    </div>
+
+    <div class="lower-section">
+		<iframe src="Buch1.txt" style="width: 100%; height: 100%; border: none;"></iframe>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umrandete Abschnitte</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .upper-section {
+            border: 5px solid black;
+            height: 7%;
+			background-color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;			
+        }
+        .lower-section {
+            border: 5px solid DodgerBlue;
+            height: 93%;
+            position: relative;
+        }
+        .upper-section img, .lower-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .button {
+			font-size: 16pt;
+            width: 100px;
+            height: 40px;
+            border: 2px solid green;
+			margin-left: 4px;
+			margin-right: 6px;
+            background-color: lime;
+            cursor: pointer; /* Zeiger bei Hover */
+        }
+        .button:hover {
+            background-color: lightgreen; /* Hintergrundfarbe bei Hover */	
+        }				
+
+    </style>
+	
+    <script>
+		function springe(URL)
+			{location.href=URL;}
+    </script>
+	
+</head>
+<body>
+
+    <div class="upper-section">
+        <button class="button" id="BTN_Sprache" onclick="springe('sprache.html')">Sprache</button>
+        <button class="button" id="BTN_Projekte" onclick="springe('Projekte.html')">Projekte</button>
+    </div>
+
+    <div class="lower-section">
+        <img src="Magier.jfif" alt="Unten Bild">
+    </div>
+
+</body>
+</html>
